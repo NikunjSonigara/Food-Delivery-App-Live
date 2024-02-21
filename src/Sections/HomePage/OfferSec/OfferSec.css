@@ -1,0 +1,91 @@
+.content5{
+    width: 70vw;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 10rem;
+}
+
+.content5_image1{
+    width: 100%;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-radius: 17px;
+    overflow: hidden;
+    background-image: url("https://nikunjsonigara.github.io/Food-Delivery-App-PT/image/Rectangle%2014.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#content5_image1{
+    width: 100%;
+}
+
+.content5_image1 div{
+    background-color: rgba(0, 0, 0, 0.20);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.content5_image1 div p{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--white-color);
+    padding-left: 3rem;
+}
+
+#content5_image2, #content5_image3{
+    width: 100%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-radius: 16px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .content5{
+        width: 90vw;
+        margin-bottom: 6rem;
+    }
+    .content5_image1 div p{
+        font-size: 3rem;
+    }
+}
+@media (min-width: 425px) and (max-width: 767px) {
+    .content5{
+        width: 90vw;
+        margin-bottom: 6rem;
+    }
+    .content5_image1 div p{
+        font-size: 1.5rem;
+        padding-left: 2rem;
+    }
+}
+@media (min-width: 375px) and (max-width: 424px) {
+    .content5{
+        width: 90vw;
+        margin-bottom: 4rem;
+    }
+    .content5_image1 div p{
+        font-size: 1.2rem;
+        padding-left: 2rem;
+    }
+}
+@media (max-width: 374px) {
+    .content5{
+        width: 90vw;
+        margin-bottom: 3rem;
+    }
+    .content5_image1 div p{
+        font-size: 1rem;
+        padding-left: 1.5rem;
+    }
+}

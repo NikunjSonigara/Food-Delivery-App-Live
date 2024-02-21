@@ -1,0 +1,93 @@
+.menu_page_content3_box{
+    width: 100%;
+    display: flex;
+    position: relative;
+    border-radius: 19px;
+    overflow: hidden;
+}
+
+.menu_page_content3_box_img{
+    width: 100%;
+}
+
+.menu_page_content3_box_img_text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.40);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+}
+
+.menu_page_content3_box_img_text1{
+    color: var(--white-color);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 2rem;
+}
+
+.menu_page_content3_box_img_text2{
+    color: var(--white-color);
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .menu_page_content3_box_img_text1{
+        font-size: 0.8rem;
+        margin-left: 0.6rem;
+    }
+    .menu_page_content3_box_img_text2{
+        font-size: 0.6rem;
+        margin-left: 0.6rem;
+        margin-bottom: 0.6rem;
+    }
+}
+@media (min-width: 425px) and (max-width: 767px) {
+    .menu_page_content3_box_grid::-webkit-scrollbar{
+        width: 0;
+    }
+    .menu_page_content3_box_img_text1{
+        font-size: 0.9rem;
+        margin-left: 0.8rem;
+    }
+    .menu_page_content3_box_img_text2{
+        font-size: 0.65rem;
+        margin-left: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+}
+@media (min-width: 375px) and (max-width: 424px) {
+    .menu_page_content3_box_grid::-webkit-scrollbar{
+        width: 0;
+    }
+    .menu_page_content3_box_img_text1{
+        font-size: 0.9rem;
+        margin-left: 0.8rem;
+    }
+    .menu_page_content3_box_img_text2{
+        font-size: 0.65rem;
+        margin-left: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+}
+@media (max-width: 374px){
+    .menu_page_content3_box_grid::-webkit-scrollbar{
+        width: 0;
+    }
+    .menu_page_content3_box_img_text1{
+        font-size: 0.8rem;
+        margin-left: 0.8rem;
+    }
+    .menu_page_content3_box_img_text2{
+        font-size: 0.6rem;
+        margin-left: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+}

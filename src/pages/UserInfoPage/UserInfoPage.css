@@ -1,0 +1,62 @@
+
+.user_info{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+}
+
+.user_info_title{
+    font-size: 2rem;
+    color: var(--shopping-cart-yellow-color);
+    margin: 2rem;
+    margin-left: 4rem;
+}
+
+.user_info_div{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_info_subdiv{
+    width: 90%;
+    background-color: #F3F3F3;
+    padding: 1rem;
+    border: 2px solid #F3F3F399;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    box-shadow: 0px 4px 8px #F3F3F3ff;
+}
+
+.user_info_usericon{
+    height: 10rem;
+    width: 10rem;
+    background: var(--shopping-cart-yellow-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.user_info_username{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 5rem;
+}
+
+.name{
+    font-size: 1.2rem;
+}
+
+.logout_btn{
+    background-color: var(--shopping-cart-yellow-color);
+    border-radius: 1rem;
+    color: white;
+    padding: 0.75rem 2rem;
+    width: 200px;
+}

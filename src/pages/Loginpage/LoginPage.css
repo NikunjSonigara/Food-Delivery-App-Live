@@ -1,0 +1,408 @@
+.loginpage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(242, 242, 242);
+}
+
+.loginpage_container{
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 2rem;
+    display: flex;
+    position: relative;
+}
+
+.loginpage_left{
+    width: 66%;
+    height: 100%;
+    transform: scale(1);
+}
+
+.loginpage_left_none{
+    transform: translate(0%);
+    width: 34%;
+    transition: all 1.2s;
+    transform: scale(0);
+    /* display: none; */
+}
+
+.loginpage_right{
+    width: 66%;
+    height: 100%;
+    position: relative;
+    right: 0;
+    left: 0;
+    transform: scale(1);
+    transition: all 1s;
+}
+
+.loginpage_right_none{
+    position: relative;
+    right: 0;
+    width: 34%;
+    transition: all 1.2s;
+    transform: scale(0);
+    /* display: none; */
+}
+
+.loginpage_center{
+    width: 34%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    transition: all 1s ease-in;
+    z-index: 1;
+    animation: loginPhotul 1 .6s ease-in; 
+}
+
+.loginpage_center_on{
+    width: 34%;
+    height: 100%;
+    position: absolute;
+    transition: all 1s ease-in;
+    z-index: 1;
+    animation: loginPhotu 1 .6s ease-in; 
+}
+
+@keyframes loginPhotu {
+    0%{
+        right: 0;
+    }
+    100%{
+        right: 66%;
+    }
+}
+
+@keyframes loginPhotul {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 66%;
+    }
+}
+
+.loginpage_img{
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.loginpage_left_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem;
+}
+
+.title{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--yellow-color);
+}
+
+.welcome{
+    font-size: 1.1rem;
+    color: gray;
+}
+
+.form_container{
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.login_text{
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.desc{
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: var(--dark-gray-color);
+}
+
+.label_text{
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.input_box{
+    margin-top: 0.5rem;
+    border: #000000;
+    height: 2.2rem;
+    width: 100%;
+    padding: 2px;
+    background-color: #F3F3F3;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 2px 4px #F3F3F3;
+}
+
+.forgor_password_div{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.forgot_password_text{
+    font-size: 0.8rem;
+}
+
+.login_btn_box{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.signin_btn{
+    padding: 0.6rem 1.2rem;
+    background-color: var(--yellow-color);
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.google_btn{
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 3px 8px var(--dark-gray-color);
+}
+
+.google_img{
+    margin: 0.6rem;
+    height: 1.5rem;
+}
+
+.loginpage_center_div{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.loginpage_center_div_title{
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+}
+
+.loginpage_center_div_desc{
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.password_div{
+    display: flex;
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+}
+
+.signup_btn_box{
+    margin-top: 2.5rem;
+}
+
+.go_for{
+    display: none;
+}
+
+
+@media (min-width: 768px) and (max-width: 1300px) {
+    .loginpage_left{
+        width: 60%;
+    }
+    .loginpage_left_none{
+        width: 40%;
+    }
+    .loginpage_center{
+        width: 40%;
+    }
+    .loginpage_center_on{
+        width: 40%;
+    }
+    .loginpage_right{
+        width: 60%;
+    }
+    .loginpage_right_none{
+        width: 40%;
+    }
+    .loginpage_center_div_title{
+        font-size: 1.3rem;
+    }
+    .loginpage_center_div_desc{
+        font-size: 0.8rem;
+        margin-bottom: 1.5rem;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    .welcome{
+        font-size: 0.8rem;
+    }
+    .loginpage_left_top{
+        margin: 2.2rem;
+    }
+    .form_container{
+        margin: 2.2rem;
+        width: 80%;
+    }
+    .login_text{
+        font-size: 2rem;
+    }
+    .desc{
+        font-size: 1rem;
+    }
+    .label_text{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 355px) and (max-width: 768px) {
+    .loginpage{
+        flex-direction: column;
+        height: 100%;
+    }
+    .loginpage_container{
+        height: auto;
+        margin-top: 1rem;
+    }
+    .loginpage_left{
+        width: 100%;
+    }
+    .loginpage_left_none{
+        display: none;
+    }
+    .loginpage_center{
+        display: none;
+    }
+    .loginpage_center_on{
+        display: none;
+    }
+    .loginpage_right{
+        width: 100%;
+    }
+    .loginpage_right_none{
+        display: none;
+    }
+    .loginpage_center_div_title{
+        font-size: 1.2rem;
+    }
+    .loginpage_center_div_desc{
+        font-size: 0.7rem;
+        margin-bottom: 1.3rem;
+    }
+    .title{
+        font-size: 1.3rem;
+    }
+    .welcome{
+        font-size: 0.7rem;
+    }
+    .loginpage_left_top{
+        margin: 2rem;
+    }
+    .form_container{
+        margin: 2rem;
+        width: 80%;
+    }
+    .login_text{
+        font-size: 1.8rem;
+    }
+    .desc{
+        font-size: 0.9rem;
+    }
+    .label_text{
+        font-size: 0.9rem;
+    }
+    .password_div{
+        flex-direction: column;
+    }
+    .go_for{
+        display: block;
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 355px) {
+    .loginpage{
+        flex-direction: column;
+        height: 100%;
+    }
+    .loginpage_left_top{
+        flex-direction: column;
+    }
+    .loginpage_container{
+        height: auto;
+        border-radius: 1rem;
+        margin-top: 1rem;
+    }
+    .loginpage_left{
+        width: 100%;
+    }
+    .loginpage_left_none{
+        display: none;
+    }
+    .loginpage_center{
+        display: none;
+    }
+    .loginpage_center_on{
+        display: none;
+    }
+    .loginpage_right{
+        width: 100%;
+    }
+    .loginpage_right_none{
+        display: none;
+    }
+    .loginpage_center_div_title{
+        font-size: 1rem;
+    }
+    .loginpage_center_div_desc{
+        font-size: 0.6rem;
+        margin-bottom: 1rem;
+    }
+    .title{
+        font-size: 1rem;
+    }
+    .welcome{
+        font-size: 0.6rem;
+    }
+    .loginpage_left_top{
+        margin: 1rem;
+    }
+    .form_container{
+        margin: 1rem;
+        width: 80%;
+    }
+    .login_text{
+        font-size: 1.2rem;
+    }
+    .desc{
+        font-size: 0.7rem;
+    }
+    .label_text{
+        font-size: 0.9rem;
+    }
+    .password_div{
+        flex-direction: column;
+    }
+    .go_for{
+        display: block;
+        margin: 1rem;
+    }
+}

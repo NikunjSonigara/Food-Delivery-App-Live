@@ -1,0 +1,232 @@
+.header{
+    width: 100vw;
+    height: 500px;
+    background-image: url("../../../../public/Images/Rectangle\ 1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header_content{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_main_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 0.4rem; */
+    margin-top: 5rem;
+    padding-top: 7rem;
+}
+
+.header_title{
+    user-select: none;
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+.header_desc{
+    user-select: none;
+    font-size: 1.5rem;
+    color: var(--white-color);
+}
+
+.header_searchbar{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    /* width: 35rem; */
+    height: 3.4rem;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 3rem;
+    background-color: var(--light-gray-color);
+    justify-content: start;
+    position: relative;
+}
+
+#searchbar_hr{
+    width: 1rem;
+    background-color: var(--black-color);
+    margin: auto;
+    rotate: 90deg;
+}
+
+.searchbar_right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    mix-blend-mode: darken;
+}
+
+#place{
+    border: none;
+    padding-left: 1rem;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#place:focus{
+    outline: none;
+}
+
+#search_icon{
+    width: 1rem;
+}
+
+#searchbar{
+    font-size: 1rem;
+    width: 20rem;
+    border: none;
+}
+
+#searchbar::placeholder{
+    color: var(--dark-gray-color);
+}
+
+#searchbar:focus{
+    outline: none;
+}
+
+
+
+.searching_container{
+    width: 100%;
+    /* background-color: #939393bb; */
+    position: relative;
+    z-index: 1;
+}
+
+.searching_item{
+    background-color: var(--light-gray-color);
+    margin: 0.25rem;
+    padding: 0.25rem;
+    border-radius: 0.2rem;
+    border: 0.2rem solid #939393bb;
+}
+
+.searching_item:hover{
+    background-color: var(--dark-gray-color);
+}
+
+/* #searchbar */
+
+/* Media Queries    */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header{
+        width: 100vw;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .header{
+        width: 100vw;
+        height: 450px;
+    }
+    .header_searchbar{
+        /* display: none; */
+        width: 25rem;
+        gap: 0.2rem;
+        height: 3rem;
+    }
+    .header_title{
+        font-size: 2rem;
+    }
+    .header_desc{
+        font-size: 1rem;
+    }
+    #place{
+        font-size: 0.8rem;
+    }
+    #searchbar{
+        font-size: 0.8rem;
+        width: 14rem;
+    }
+    #searchbar_hr{
+        margin: 1rem 0.8rem;
+    }
+}
+@media (min-width: 375px) and (max-width: 424px) {
+    .header{
+        width: 100vw;
+        height: 350px;
+    }
+    .header_main_content{
+        padding-top: 4rem;
+    }
+    .header_searchbar{
+        /* display: none; */
+        width: 20rem;
+        gap: 0.1rem;
+        height: 2.5rem;
+    }
+    .header_title{
+        font-size: 1.5rem;
+    }
+    .header_desc{
+        font-size: 0.8rem;
+    }
+    .searchbar_right{
+        gap: 0.2rem;
+    }
+    #place{
+        font-size: 0.7rem;
+        padding-left: 0.4rem;
+    }
+    #searchbar{
+        font-size: 0.7rem;
+        width: 11rem;
+    }
+    #search_icon{
+        width: 0.8rem;
+    }
+    #searchbar_hr{
+        margin: 0.9rem 0.7rem;
+    }
+}
+@media (max-width: 374px) {
+    .header{
+        width: 100vw;
+        height: 350px;
+    }
+    .header_main_content{
+        padding-top: 4rem;
+    }
+    .header_searchbar{
+        /* display: none; */
+        width: 16rem;
+        gap: 0.1rem;
+        height: 2.5rem;
+    }
+    .header_title{
+        font-size: 1.3rem;
+    }
+    .header_desc{
+        font-size: 0.7rem;
+    }
+    .searchbar_right{
+        gap: 0.2rem;
+    }
+    #place{
+        font-size: 0.7rem;
+        padding-left: 0.4rem;
+    }
+    #searchbar{
+        font-size: 0.7rem;
+        width: 7rem;
+    }
+    #search_icon{
+        width: 0.8rem;
+    }
+    #searchbar_hr{
+        margin: 0.9rem 0.7rem;
+    }
+}

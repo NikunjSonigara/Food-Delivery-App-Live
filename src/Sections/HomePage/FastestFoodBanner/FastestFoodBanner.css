@@ -1,0 +1,78 @@
+.content4{
+    margin-top: 10rem;
+    width: 100vw;
+    height: 400px;
+    background-image: url("https://nikunjsonigara.github.io/Food-Delivery-App-PT/image/Rectangle%2012.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 10rem;
+}
+
+.content4_div{
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.10);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.content4_div p{
+    margin-left: 10rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--white-color);
+}
+
+.content4_div p span{
+    color: var(--yellow-color);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .content4{
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
+}
+@media (min-width: 425px) and (max-width: 767px) {
+    .content4{
+        height: 200px;
+        margin-top: 5rem;
+        margin-bottom: 6rem;
+    }
+    .content4_div{
+        height: 200px;
+    }
+    .content4_div p{
+        margin-left: 5rem;
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 375px) and (max-width: 424px) {
+    .content4{
+        height: 150px;
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+    }
+    .content4_div{
+        height: 150px;
+    }
+    .content4_div p{
+        margin-left: 3rem;
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 374px) {
+    .content4{
+        height: 130px;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+    .content4_div{
+        height: 130px;
+    }
+    .content4_div p{
+        margin-left: 2rem;
+        font-size: 1rem;
+    }
+}

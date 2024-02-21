@@ -1,0 +1,168 @@
+.navbar_container{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar_s{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(17, 17, 17, 0.59);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar_div{
+    height: 5rem;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_left{
+    color: var(--shopping-cart-yellow-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.header_right{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+#header_menu{
+    color: var(--white-color);
+    font-size: 1.1rem;
+}
+
+#header_shopping{
+    position: relative;
+}
+
+#header_shopping_icon{
+    height: 2rem;
+}
+
+/* .header_right a div{
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    background-color: var(--shopping-cart-yellow-color);
+    top: -3px;
+    right: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+} */
+
+.header_right a div p{
+    font-size: 11px;
+    color: var(--white-color);
+}
+
+.usericon{
+    height: 2rem;
+    width: 2rem;
+    background: var(--shopping-cart-yellow-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.username{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar_container{
+        width: 100vw;
+    }
+    .navbar_div{
+        width: 90%;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .navbar_container{
+        width: 100vw;
+    }
+    .navbar_div{
+        width: 90%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+    .navbar_container{
+        width: 100vw;
+    }
+    .navbar_div{
+        width: 90%;
+    }
+    .header_left{
+        font-size: 0.9rem;
+    }
+    .header_right{
+        gap: 1.5rem;
+    }
+    #header_menu{
+        font-size: 0.9rem;
+    }
+    #header_shopping_icon{
+        height: 1.4rem;
+    }
+    .header_right a div p{
+        font-size: 8px;
+    }
+    .usericon{
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+}
+
+@media (max-width: 320px){
+    .navbar_container{
+        width: 100vw;
+    }
+    .navbar_div{
+        width: 90%;
+    }
+    .header_left{
+        font-size: 0.9rem;
+    }
+    .header_right{
+        gap: 0.8rem;
+    }
+    #header_menu{
+        font-size: 0.9rem;
+    }
+    #header_shopping_icon{
+        height: 1.4rem;
+    }
+    .header_right a div p{
+        font-size: 8px;
+    }
+    .usericon{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
